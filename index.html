@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Xueren</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86864a2432.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+        <a id="xueren" href="https://immediate-picturesque-dugout.glitch.me/"
+          >Xueren</a
+        >
+      </h1>
+      <!-- Shopping cart icon -->
+      <div id="cart-icon" class="cart-icon">
+        <div id="cart-count" class="cart-count">0</div>
+      </div>
+      <a
+        href="https://southern-separated-midnight.glitch.me/"
+        target="_blank"
+        id="bag-icon"
+      >
+        <i class="fas fa-shopping-bag"></i>
+      </a>
+      <a
+        href="https://scarlet-satin-saw.glitch.me/"
+        target="_blank"
+        id="connect-icon"
+      >
+        <i class="fa-solid fa-user" style="color: #000000"></i>
+      </a>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+
+      <title>Menu</title>
+      <style>
+        .menu-toggle {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 22px;
+          position: relative;
+          cursor: pointer;
+          padding: 10px;
+          position: absolute;
+          margin-top: 0px;
+          left: 5%;
+          transform: translate(-50%, -50%);
+          top: 7%;
+          text-align-last: center;
+          font-size: 2vw;
+          margin-top: 25px;
+        }
+
+        .menu-toggle span {
+          display: block;
+          position: relative;
+          height: 3px;
+          background: #000;
+          border-radius: 3px;
+          transition: background 0.3s ease;
+        }
+
+        /* Styles for the expanded menu */
+        .menu-expanded {
+          display: none;
+        }
+
+        .menu-expanded ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .menu-expanded ul li {
+          padding: 10px;
+        }
+      </style>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu-expanded" id="menuExpanded">
+        <ul>
+          <li><a href="#WLC">Welcome To The Night Fall</a></li>
+          <li><a href="#CS2023">Collection Summer 2023</a></li>
+          <li><a href="#events">Événements</a></li>
+        </ul>
+      </div>
+
+      <script>
+        document
+          .getElementById("menuToggle")
+          .addEventListener("click", function () {
+            document
+              .getElementById("menuExpanded")
+              .classList.toggle("menu-expanded");
+          });
+      </script>
+    </div>
+
+    <div id="movie" style="padding: 56.25% 0 0 0; position: relative">
+      <iframe
+        src="https://player.vimeo.com/video/830539484?h=17a933fba8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        title="202305241546"
+      ></iframe>
+    </div>
+
+    <div class="container">
+      <div
+        class="background-image"
+        style="
+          background-image: url('https://www.lexpress.fr/resizer/kejhDDezWy6Zk8lL9E7-8ftfEMw=/970x548/cloudfront-eu-central-1.images.arcpublishing.com/lexpress/OYCDJQQE3VHZNDG6ZPHHUDQPW4.jpg');
+        "
+      ></div>
+      <div class="paragraph" id="WLC">
+        <h2>Welcome to <br />the night fall</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div
+        class="background-image"
+        style="
+          background-image: url('https://media.vogue.fr/photos/5e23530b61c336000883abc1/master/w_1600,c_limit/20200118_JACQUEMUS320.jpg');
+        "
+      ></div>
+      <div class="paragraph" id="CS2023">
+        <h2>
+          <a
+            id="Collection-Summer"
+            href="https://traveling-rebel-citron.glitch.me/"
+            >Collection Summer <br />2023</a
+          >
+        </h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div
+        class="background-image"
+        style="
+          background-image: url('https://cdn-s-www.lalsace.fr/images/F15B625B-99D1-4150-8EFE-8DEB889C7E85/NW_raw/vendredi-30-septembre-la-marque-coperni-a-presente-une-robe-creee-a-partir-de-liquide-vaporise-sur-la-peau-photo-sipa-shutterstock-1664893110.jpg');
+        "
+      ></div>
+      <div class="paragraph" id="events">
+        <h2>Événements</h2>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <div1>
+          <h3 class="mentionslegales">Services</h3>
+          <div>
+            <p>Service dispnible 7j/7 au 01.XX.XX.XX.XX<br /></p>
+            <p>FAQ<br /></p>
+            <p>Trouver un magasin</p>
+          </div>
+        </div1>
+        <div2>
+          <h3 class="mentionslegales">A propos de Xueren</h3>
+          <p>Histoire de la marque</p>
+          <p>Mentions légales<br /></p>
+          <p>Cookies<br /></p>
+        </div2>
+        <div3>
+          <h3 class="mentionslegales">Suivez-nous</h3>
+          <p>
+            Souscrivez à la Newsletter pour recevoir en exclusivité les
+            nouveautés
+          </p>
+          <p>Réseaux sociaux</p>
+        </div3>
+      </div>
+      <p>©Xueren, 2023</p>
+    </footer>
+  </body>
+</html>
